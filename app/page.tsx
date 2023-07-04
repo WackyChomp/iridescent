@@ -1,8 +1,12 @@
 
 const Home = () => {
   return(
-    <div className="">
+    <div className="flex-start flex-col paddings mb-16">
       <h1>Home Section</h1>
+      <h1>Categories</h1>
+      <h1>Posts</h1>
+      <h1>More</h1>
+      
     </div>
   )
 }

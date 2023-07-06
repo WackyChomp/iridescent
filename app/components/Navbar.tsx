@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { NavLinks } from '../constants';
+import AuthProviders from './AuthProviders';
 
 type Props = {}
 
 const Navbar = (props: Props) => {
-  const session = {}
+  const session = {};         // null by default
 
   return (
     <nav className='flexBetween navbar'>
@@ -26,16 +27,20 @@ const Navbar = (props: Props) => {
 
       {/* Profile icon for sign in */}
       <div className="flexCenter gap-5">
+        {/* Signed In */}
         {session ?(
           <>
+            {/* Icon */}
             UserPhoto
+            {/* Button */}
             <Link href='/'>
               Share Project!
             </Link>
           </>
 
+        // Signed Out
         ) :(
-          <h1>Placeholder</h1>
+          <AuthProviders />
         )}
       </div>
     </nav>

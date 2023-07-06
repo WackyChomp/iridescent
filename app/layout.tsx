@@ -1,4 +1,5 @@
 import './globals.css';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
       <main>
         {children}      {/* page.tsx render */}
       </main>
-      Footer
+      <Footer />
     </html>
   )
 }

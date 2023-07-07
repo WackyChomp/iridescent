@@ -8,3 +8,35 @@ export const NavLinks = [
   {href: '/', key:'Track', text: 'Track' },
   {href: '/', key:'Volunteer', text: 'Volunteer' },
 ]
+
+export const FooterLinks = [
+  {
+    title: 'People',
+    links: [
+      'Gary',
+      'Sandra',
+      'Michael',
+      'Simon',
+      'Victor',
+    ],
+  },
+  {
+    title: 'About Us',
+    links: [
+      'Achievements',
+      'Benefits',
+      'Community',
+      'Partners',
+      'Volunteer',
+    ],
+  },
+  {
+    title: '',
+    links: [
+      '',
+      '',
+      '',
+      '',
+    ]
+  },
+]

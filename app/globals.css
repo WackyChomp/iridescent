@@ -82,7 +82,20 @@ body {
 }
 
 
-/* ------------- ------------- */
+/* ------------- Footer ------------- */
+.footer{
+  @apply flex-col paddings w-full gap-20 bg-light-white;
+}
+
+.footer_column{
+  @apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+}
+
+.footer_copyright{
+  @apply max-sm:flex-col w-full text-sm font-normal;
+}
+
+
 /* ------------- ------------- */
 /* ------------- ------------- */
 /* ------------- ------------- */

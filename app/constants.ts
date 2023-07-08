@@ -13,11 +13,11 @@ export const FooterLinks = [
   {
     title: 'People',
     links: [
-      'Gary',
-      'Sandra',
-      'Michael',
-      'Simon',
-      'Victor',
+      'Gary Smith',
+      'Sandra Samba',
+      'Michael Reeves',
+      'Simon Shulks',
+      'Victor Steel',
     ],
   },
   {
@@ -31,9 +31,62 @@ export const FooterLinks = [
     ],
   },
   {
+    title: 'Technology',
+    links: [
+      'Laptops',
+      'Cameras',
+      'Monitors',
+      'Batteries',
+    ]
+  },
+  {
+    title: 'Articles',
+    links: [
+      '64 project ideas for school',
+      '104 days of summer vacation',
+      'How to spot mythical creatures',
+      'Who did this person become',
+      'Optimizing your workflow',
+      'Fastest animals in the world'
+    ]
+  },
+  {
+    title: 'Sports',
+    links: [
+      'Basketball',
+      'Baseball',
+      'Football',
+      'Volleyball',
+    ]
+  },
+  {
+    title: 'Destinations',
+    links: [
+      'Australia',
+      'Bastonia',
+      'Canada',
+      'Denmark',
+      'Estonia',
+    ]
+  },
+  {
+    title: 'Animals',
+    links: [
+      'Ants crawling everywhere',
+      'Bats actively fly at night',
+      'Cats are curiously devious',
+      'Dogs love all kinds of affection',
+      'Elks are large in person',
+      'Foxes have quick reflexes',
+      'Gars swim in stealth',
+      'Hawks hunt small creatures',
+      "Ibis is something you don't know",
+      'Jays cannot camoflauge in green',
+    ]
+  },
+  {
     title: '',
     links: [
-      '',
       '',
       '',
       '',

@@ -53,13 +53,13 @@
 
 ## Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
+Here are some frameworks/libraries used in this project:
 * [![TypeScript][TypeScript]][TypeScript-url]
 * [![Tailwind][Tailwind.css]][Tailwind-url]
 * [![React][React.js]][React-url]
 * [![Next][Next.js]][Next-url]
 * [![Node][Node.js]][Node-url]
+* [![GraphQL][GraphQL]][GraphQL-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,6 +118,10 @@ List of wonderful resources. Hope these help towards your goals!
 [Node-url]: https://nodejs.org/en/
 [Tailwind.css]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
+
+
+[GraphQL]: https://img.shields.io/badge/GraphQL-000000?style=for-the-badge&logo=graphql&logoColor=DB7093
+[GraphQL-url]: https://graphql.org/
 
 
 [product-screenshot]: ./src/assets/

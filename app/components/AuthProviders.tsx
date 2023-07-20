@@ -5,7 +5,7 @@ import { getProviders, signIn } from 'next-auth/react';
 
 
 
-type Props = {
+type Provider = {
   id: string;
   name: string;
   type: string;
@@ -16,7 +16,7 @@ type Props = {
 
 type Providers = Record<string, Provider>;
 
-const AuthProviders = (props: Props) => {
+const AuthProviders = () => {
   const [providers, setProviders] = useState<Providers | null>(null);
 
 
@@ -35,7 +35,7 @@ const AuthProviders = (props: Props) => {
       return(
         <div>
           {Object.values(providers).map((provider: Provider, i) => (
-            <button key={i}>{provider.id}</button>
+            <button key={i} onClick={() => signIn(provider?.id)}>{provider.id}</button>
           ))}
         </div>
       )

@@ -4,6 +4,7 @@ import { AdapterUser } from "next-auth/adapters";
 import GoogleProvider from 'next-auth/providers/google';
 import jsonwebtoken from 'jsonwebtoken';      // tracks user's jswon web token
 import { JWT } from 'next-auth/jwt';
+import { SessionInterface } from "@/app/common.types";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -31,7 +32,8 @@ export const authOptions: NextAuthOptions = {
     async session ({ session }) {
       return session;
     },
-    // triggered when user signs in
+
+    // triggered when user signs in / interacts with grafbase
     async signIn({ user }: { user: AdapterUser | User }){
       try {
         // get user if they exist
@@ -46,4 +48,12 @@ export const authOptions: NextAuthOptions = {
       }
     }
   }
+}
+
+
+// Properties from Google to add towards session
+export async function getCurrentUser() {
+  const session = await getServerSession(authOptions) as SessionInterface;
+
+  return session;
 }

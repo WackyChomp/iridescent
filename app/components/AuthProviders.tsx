@@ -9,7 +9,7 @@ type Provider = {
   id: string;
   name: string;
   type: string;
-  signInUrl: string;
+  signinUrl: string;
   callbackUrl: string;
   signInUrlParams?: Record<string, string> | null;
 }

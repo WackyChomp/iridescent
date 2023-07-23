@@ -31,3 +31,7 @@ const User = g.model('User', {
   linkedInUrl: g.url().optional(),
   projects: g.relation(() => Project).list().optional(),
 })
+
+export default config({
+  schema: g
+})

@@ -10,3 +10,13 @@ export interface SessionInterface extends Session {
     avatarUrl: string;
   };
 }
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  email: string;
+  avatarUrl: string;
+  description: string | null;
+  githubUrl: string | null;
+  linkedinUrl: string | null;
+}

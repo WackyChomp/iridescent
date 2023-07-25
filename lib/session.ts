@@ -5,7 +5,7 @@ import GoogleProvider from 'next-auth/providers/google';
 import jsonwebtoken from 'jsonwebtoken';      // tracks user's jswon web token
 import { JWT } from 'next-auth/jwt';
 import { SessionInterface, UserProfile } from "@/app/common.types";
-import { getUser } from "./actions";
+import { createUser, getUser } from "./actions";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -37,10 +37,17 @@ export const authOptions: NextAuthOptions = {
     // triggered when user signs in / interacts with grafbase
     async signIn({ user }: { user: AdapterUser | User }){
       try {
-        // get user if they exist
+        // get user if they exist -- uses actions.ts
         const userExists = await getUser(user?.email as string) as { user?: UserProfile}
 
         // if they don't exist, create new user
+        if (!userExists.user){
+          await createUser(
+            user.name as string, 
+            user.email as string, 
+            user.image as string
+          );
+        }
 
         return true
         

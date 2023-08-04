@@ -60,7 +60,7 @@ export const authOptions: NextAuthOptions = {
 }
 
 
-// Properties from Google to add towards session
+// Properties from Google/SessionInterface to add towards session in navbar component
 export async function getCurrentUser() {
   const session = await getServerSession(authOptions) as SessionInterface;
 

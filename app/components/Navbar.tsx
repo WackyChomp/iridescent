@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { NavLinks } from '../constants';
 import AuthProviders from './AuthProviders';
+import { getCurrentUser } from '@/lib/session';
 
-type Props = {}
 
-const Navbar = (props: Props) => {
-  const session = null;         // null by default , {}
+const Navbar = async() => {
+  const session = await getCurrentUser();         // null by default , {}
 
   return (
     <nav className='flexBetween navbar'>
@@ -28,8 +29,19 @@ const Navbar = (props: Props) => {
       {/* Profile icon for sign in */}
       <div className="flexCenter gap-5">
         {/* Signed In */}
-        {session ?(
+        {session?.user ?(
           <>
+          
+            {session?.user?.image && (
+              <Image
+                src={session.user.image}
+                width={40}
+                height={40}
+                className='rounded-full'
+                alt={session.user.name}
+              />
+            )}
+
             {/* Icon */}
             UserPhoto
             {/* Button */}

@@ -14,11 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Navbar />
-      <main>
-        {children}      {/* page.tsx render */}
-      </main>
-      <Footer />
+      <body>
+        <Navbar />
+        <main>
+          {children}      {/* page.tsx render */}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }

@@ -51,6 +51,23 @@
 
 
 
+## About the Project
+Need a space to showcase your project to a small supportive audience before sharing with the masses? It is intimidating for beginners to head over to the vast frontier filled with experienced and accomplished individuals.
+
+This is your space to acclimate into the digital world and deescalate your nerves.
+
+Jumpstart your journey by sharing your digital work and presence with <u><b>Iridescent</b></u>!
+
+<u><b>Project Purpose / Vision:</b></u>
+* Utilizing Google Authentication to allow users to create dedicated webpage for each individual project added by user
+* Sleek and responsive design for satisfying seamless user experience with <u><b>Tailwind CSS</u></b>
+* Deploying with <u><b>Vercel</b></u> for accessibility and reliability through any device
+* Utilizing open source, <u><b>Cloudinary</b></u> to store images in remote database and retrieve them through URLs to save local space
+* Utilizing open source, <u><b>Grafbase</b></u> for remote database to combine and organize data sources into one GraphQL endpoint 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 ## Built With
 
 Here are some frameworks/libraries used in this project:

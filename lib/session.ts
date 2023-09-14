@@ -31,7 +31,23 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     // triggered when user visits page
     async session ({ session }) {
-      return session;
+      const email = session?.user?.email as string;
+      try {
+        const data = await getUser(email) as { user?: UserProfile }
+
+        const newSession = {
+          ...session,
+          user:{
+            ...session.user,
+            ...data?.user
+          }
+        }
+
+        return newSession;
+      } catch (error) {
+        console.log("There's an ErRoR retrieving user data:", error);
+        return session;
+      }
     },
 
     // triggered when user signs in / interacts with grafbase
